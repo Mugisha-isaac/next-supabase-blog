@@ -1,6 +1,7 @@
  import { createClient } from "@supabase/supabase-js";
+ console.log('value: ', process.env.SUPABASE_URL)
 
  export default createClient(
-     process.env.NEXT_PUBLIC_SUPABASE_URL,
-     process.env.NEXT_PUBLIC_SUPABASE_API_KEY
+     process.env.supabaseUrl,
+     process.env.supabaseKey
 ); 
